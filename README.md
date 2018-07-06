@@ -142,7 +142,7 @@ This file represents a project in the projects collection and contains both YAML
     {% endfor %}
 </ul>
 ```
-The ```{% %}``` tags represent liquid syntax and their contents are processed by Jekyll to render static HTML in the final site. You can see that all of the projects in the projects collection can be referenced with ```site.projects``` and iterated through with a for loop. In this specific for loop, for each project in the projects collection, we pull its image and title using ```{{ }}``` tags. All of a particular project's information is defined in its markdown file just like the one which we saw above. You can find more useful information about collections in Jekyll's website (http://jekyllrb.com/docs/collections/).
+The tags represent liquid syntax and their contents are processed by Jekyll to render static HTML in the final site. You can see that all of the projects in the projects collection can be referenced with ```site.projects``` and iterated through with a for loop. In this specific for loop, for each project in the projects collection, we pull its image and title using other tags. All of a particular project's information is defined in its markdown file just like the one which we saw above. You can find more useful information about collections in Jekyll's website (http://jekyllrb.com/docs/collections/).
 
 
 
