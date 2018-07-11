@@ -1,5 +1,5 @@
 # Weekly Report
-## Abhijeet Gokar -1 1July 2018
+### Abhijeet Gokar -11 July 2018
 
 # Problem Statement
 To completely perform SVM and Random Forest on Open Datasets Indian Pines , Pavia University and Kennedy Space Center.
@@ -14,15 +14,21 @@ To completely perform SVM and Random Forest on Open Datasets Indian Pines , Pavi
 ## Code Implementation
 
 * Using SVM and Random Forest, the first task was to see the accuracy metrics by training the classifier functions by train test splitting the data. 
+'''
 $ linear_p = svm.SVC(C=1 , kernel='linear',cache_size=1000)
+'''
+'''
 $ i_RF = RandomForestClassifier(max_depth=4, random_state=42)
+'''
 
 * The main objectives here are to overcome the random splitting of data which is not suited for the hyperspectral datasets , and to see the ideal train test split ratio in order to minimize the variance in accuracy.
 
 * The next step to fine tune the training is to use k-fold cross validation and gridsearch to search for the optimal parameters.
 
-$ from sklearn.model_selection import GridSearchCV
-$ GridSearchCV()
+'''
+ from sklearn.model_selection import GridSearchCV
+ GridSearchCV()
+ '''
 
 
 # Evaluation
