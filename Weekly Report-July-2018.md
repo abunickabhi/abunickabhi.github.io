@@ -15,10 +15,10 @@ To completely perform SVM and Random Forest on Open Datasets Indian Pines , Pavi
 
 * Using SVM and Random Forest, the first task was to see the accuracy metrics by training the classifier functions by train test splitting the data. 
 ```
-$ linear_p = svm.SVC(C=1 , kernel='linear',cache_size=1000)
+ linear_p = svm.SVC(C=1 , kernel='linear',cache_size=1000)
 ```
 ```
-$ i_RF = RandomForestClassifier(max_depth=4, random_state=42)
+ i_RF = RandomForestClassifier(max_depth=4, random_state=42)
 ```
 
 * The main objectives here are to overcome the random splitting of data which is not suited for the hyperspectral datasets , and to see the ideal train test split ratio in order to minimize the variance in accuracy.
@@ -27,7 +27,7 @@ $ i_RF = RandomForestClassifier(max_depth=4, random_state=42)
 
 ```
  from sklearn.model_selection import GridSearchCV
- GridSearchCV()
+ GridSearchCV( *3 parameters to run this function* )
  ```
 
 
